@@ -48,6 +48,7 @@ export const AddContato = styled.button`
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color;
+  color: #000;
 
   &:hover {
     opacity: .5;
@@ -80,5 +81,12 @@ export const AddContato = styled.button`
 
   @media (max-width: 48rem) {
     margin-top: 1rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
+
+    &::after {
+      content: none;
+    }
   }
 `
